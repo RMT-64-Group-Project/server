@@ -1,13 +1,13 @@
 const express = require('express')
 
 const mainRouter = require('./routes/main')
-const authRoute = require('./routes/auth')
+const authRouter = require('./routes/auth')
 
 const port = 3000
 const app = express()
 
 app.use(mainRouter)
-app.use(authRoute)
+app.use(authRouter)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
